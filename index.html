@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>まじかるオセロ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Pacifico&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="fantasy-bg"></div>
+    <div class="container">
+        <header>
+            <h1 class="fantasy-title">まじかるオセロ</h1>
+            <div id="cpu-emotion" class="cpu-bubble">いっしょにあそぼう！ ✨</div>
+        </header>
+
+        <div class="game-info">
+            <div class="score-box human">
+                <span class="score-label" id="human-label">あなた</span>
+                <span id="human-score" class="score-value">2</span>
+            </div>
+            <div class="turn-indicator">
+                <div id="current-turn" class="current-turn-piece black"></div>
+                <div class="status-message" id="status">あなたのばんだよ</div>
+            </div>
+            <div class="score-box cpu">
+                <span class="score-label" id="cpu-label">CPU</span>
+                <span id="cpu-score" class="score-value">2</span>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <div id="board"></div>
+        </div>
+
+        <div class="controls">
+            <button id="reset-btn">まほうのリセット ✨</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
